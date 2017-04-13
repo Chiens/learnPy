@@ -39,7 +39,7 @@ print(' '*2+'现在时间(%s) + 8天，8小时，8分钟：%s' % (now, now + dat
 #本地时间转换为UTC时间
 tz_utc_8 = datetime.timezone(datetime.timedelta(hours=8)) #创建时区UTC+8:00。即北京时间
 utc_dt = now.replace(tzinfo=tz_utc_8) #设置当前时间为UTC+8:00
-print('8.将当前时间%s强制设置为UTC+8:00为：%s' % (now, utc_dt))
+print('8.将当前时间[%s]强制设置为UTC+8:00为：[%s](如果没有变化，那么证明本地时间就是北京时间)' % (now, utc_dt))
 
 #使用datetime.datetime.utcnow()获取当前的UTC时间
 utc_dat = datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc)
