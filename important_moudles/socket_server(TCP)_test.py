@@ -21,7 +21,7 @@ def tcplink(sock, addr):
         time.sleep(1)
         if not data or data.decode('utf-8') == 'exit':
             break
-        sock.send(('Hello, %s!' % data.decode('utf-8')).encode('utf-8')) #这里的传送内容一定要用encod()以byte形式发送
+        sock.send(('Hello, %s!' % data.decode('utf-8')).encode('utf-8')) #这里的传送内容一定要用encod()以bytes形式发送
     sock.close()
     print('Connection from %s:%s' % addr)
 
