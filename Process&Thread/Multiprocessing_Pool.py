@@ -1,5 +1,5 @@
 #coding:utf-8
-"This file running on python3.4"
+"python3.4"
 from multiprocessing import Pool
 import os, time, random
 
