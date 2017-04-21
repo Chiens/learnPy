@@ -16,6 +16,7 @@ class DefaultSaxHandler(object):
 
 xml = r'''<?xml version = "1.0"?>
 <ol>
+    <yweather:forecast day="Wed" date="27 May 2015" low="20" high="33" text="Partly Cloudy" code="30" />
     <li><a href = "/python">Python</a></li>
     <li><a href = "/ruby">Ruby</a></li>
 </ol>
