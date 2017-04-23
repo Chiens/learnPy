@@ -23,6 +23,7 @@ password = input("Password:")
 to_addr = input("To:")
 smtp_server = input("SMTP server:")
 
+#构造HIMEText对象，如果是发送html则：MIMEText('<html><body><h1>Hello</h1></body></html>', 'html', 'utf-8')
 msg = MIMEText("Hello, send by Python...", 'plain', 'utf-8')
 #添加邮件头
 msg['From'] = _format_addr("Python爱好者<%s>" % from_addr)
