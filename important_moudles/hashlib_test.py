@@ -39,24 +39,24 @@ def query(username):
 
 def main():
     while True:
-        print("1,login  2.registered 3.exit")
+        print("1.login  2.registered 3.exit")
         behavior = input('\n:')
-        if behavior == '1':
-            username = input("Enter your username:")
+        if behavior == 1:
+            username = raw_input("Enter your username:")
             if username in db:
-                password = input("Enter your password:")
+                password = raw_input("Enter your password:")
                 if calc_md5(password) in db[username][mw]:
                     print('Welcome!')
                     print('是否查询密码?')
-                    a = input('(y/n):')
+                    a = raw_input('(y/n):')
                     if a == 'y':
                         query(username)
                     else:continue
                 else:print("Password is wrong.")
             else:print("Username is wrong.")
-        elif behavior == '2':
-            username = input("Enter your username:")
-            password = input("Enter your password:")
+        elif behavior == 2:
+            username = raw_input("Enter your username:")
+            password = raw_input("Enter your password:")
             save_user(username,password)
         else:
             break
