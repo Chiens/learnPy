@@ -21,7 +21,7 @@ if __name__ == '__main__':
     while True:
         try:
             x = next(fib)
-            print("value: %s" % x)
+            print("value: %s" % x,end=',')
         except StopIteration as e:
             print("Generator return: %s" % e.value)
             break
