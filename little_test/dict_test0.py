@@ -4,7 +4,7 @@
 @ Author: Chiens
 @ Time  : 2018-6-21
 @ File  : dict_test0.py
-@ Context:复习字典的特性、内建方法、多态方法。
+@ Context:复习字典的特性、内建方法、多态方法。。
 '''
 
 class Common(object):
