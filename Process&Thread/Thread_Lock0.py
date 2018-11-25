@@ -18,7 +18,7 @@ def run_thread(n):
     for i in range(100000):
         change_it(n)
 
-if __name__ == '__main__':
+if '__name__' == '__main__':
     t1 = Thread(target=run_thread, args=(5,))
     t2 = Thread(target=run_thread, args=(8,))
     t1.start()

@@ -18,7 +18,7 @@ def read(q):
         value = q.get(True)
         print("Get %s from queue." % value)
 
-if __name__ == '__main__':
+if '__name__' == '__main__':
     #father process create queue
     q = Queue()
     pw = Process(target=write, args=(q,))

@@ -19,9 +19,9 @@ class Common(object):
         '''this method is a operation of show dict-add'''
         self.dikey = input('Enter the new key:')
         self.dival = input('Enter the new value:')
-        self.mydict[self.dikey] = self.dival
+        self.mydict[self.dikey] = self.dival1
         print(self.mydict)
-    def mydel(self):
+    def mydel(self): 
         '''this method is a operation of delet value or key from dict'''
         while True:
             self.mychoice = input('Please choice a operation:'

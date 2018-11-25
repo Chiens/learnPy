@@ -10,7 +10,7 @@ def loop():
         time.sleep(1)
     print('Thread %s ended.' % threading.current_thread().name)
 
-if __name__ == '__main__':
+if '__name__' == '__main__':
     print('Thread %s is running...' % threading.current_thread().name)
     t = threading.Thread(target=loop, name='哈哈')
     t.start()

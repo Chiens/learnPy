@@ -1,5 +1,4 @@
-#coding:utf-8
-"python3.4"
+#coding: utf-8
 from multiprocessing import Pool
 import os, time, random
 
@@ -12,7 +11,7 @@ def long_time_task(name):
     end = time.time()
     print("Task %s runs %0.2f seconds." % (name, (end - start)))
 
-if __name__ == "__main__":
+if '__name__' == "__main__":
     print("Parant process %s." % os.getpid())
     p = Pool(4)
     for i in range(5):

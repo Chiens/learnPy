@@ -14,7 +14,7 @@ def process_thread(name):
     local_student.student = name
     process_student()
 
-if __name__ == '__main__':
+if '__name__' == '__main__':
     t1 = threading.Thread(target=process_thread, args=('Alice',), name='Thread-A')
     t2 = threading.Thread(target=process_thread, args=('Bob',), name='Thread-B')
     t1.start()
